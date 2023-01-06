@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/***HEADER***/
+header {
+  position: relative;
+  border-radius: 1rem;
+  text-align: right;
+  padding: 10px 0px;
+  font-size: 1.2rem;
+  border: 3px;
+  padding-right: 21px;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-decoration: none;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+ul#horizontal-list li {
+  display: inline;
+  font-family: "Literata", serif;
+  font-size: 1rem;
+}
+
+header a {
+  margin-left: 6rem;
+  text-decoration: none;
+  color: rgb(24, 51, 148);
+}
+
+#logo {
+  font-family: "Literata", serif;
+  padding-left: 1rem;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+a {
+  font-family: "Literata", serif;
+  text-decoration: none;
+  transition: color 0.1s, background-color 0.1s;
+  font-size: 2rem;
+}
+a {
+  position: relative;
+  padding: 16px 0;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  color: rgb(24, 51, 148);
+  font-size: 1rem;
+}
+
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(24, 51, 148);
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+
+a:hover::before,
+a:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+/*****TEKSTER****/
+
+h1 {
+  font-family: "Literata", serif;
+  font-size: 3rem;
+  color: rgb(24, 51, 148);
+  font-weight: bolder;
+}
+h2 {
+  font-family: "Cutive Mono", monospace;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
+h3 {
+  font-family: "Cutive Mono", monospace;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+h4 {
+  font-family: "Cutive Mono", monospace;
+  font-size: 2.8rem;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/**til tal**/
+h5 {
+  font-family: "Cutive Mono", monospace;
+  font-size: 12rem;
+  font-weight: lighter;
+  color: rgb(24, 51, 148);
+}
+h6 {
+  font-family: "Cutive Mono", monospace;
+  font-size: 4.6rem;
+  font-weight: lighter;
+  color: rgb(24, 51, 148);
+  font-style: italic;
+}
