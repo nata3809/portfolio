@@ -239,7 +239,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin-bottom: 90px;
 }
 
 .grid_ani1 {
@@ -271,11 +270,35 @@ main {
 
 .grid_figur {
   display: grid;
-  grid-template-rows: 1fr 1fr;
 }
 
-.grid_figur1 img {
-  width: 91%;
+.figur2 {
+  grid-column: 2;
+}
+.figur2 img {
+  width: 93%;
+}
+
+/*******Indhold*******/
+
+.grid_video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 90px;
+}
+
+.grid_klip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 90px;
+}
+
+.grid_git {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
 /**********************MOBILE SITE******************************/
