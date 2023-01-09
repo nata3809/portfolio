@@ -37,6 +37,7 @@ header {
 
 .head {
   display: grid;
+  grid-template-columns: 0.05fr 1fr;
   text-decoration: none;
   align-items: center;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -57,7 +58,7 @@ header a {
 
 #logo {
   font-family: "Literata", serif;
-  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 a:hover,

@@ -343,7 +343,41 @@
       width: 100%;
     } /* Slut med 100% fremdrift */
   }
+
+  /*****FOOTER*****/
+  footer {
+    background-color: rgba(24, 51, 148, 0.098);
+    width: 100%;
+    min-height: 250px;
+    padding: 10px 10px 25px 10px;
+    margin-top: 50px;
+  }
+
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+  }
+  .footertext {
+    font-size: 2.5rem;
+    color: black;
+  }
+  .footertext2 {
+    font-size: 1.2rem;
+    color: black;
+    letter-spacing: normal;
+  }
+
+  .footerlist {
+    list-style-type: none;
+    display: grid;
+  }
+  .footerlink {
+    text-transform: none;
+  }
 }
+
 /**********************MOBILE SITE******************************/
 
 /*****INDEX HTML********/
@@ -425,8 +459,13 @@
   .grid_ps {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 90px;
+    gap: 40px;
     text-align: center;
+    margin-bottom: 90px;
+  }
+  .projekt_link {
+    line-height: 1;
+    font-size: 1.2rem;
   }
 
   .grid_3_3 {
@@ -509,8 +548,8 @@
 
   .grid_git {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr;
+
     margin-top: 40px;
   }
 
@@ -534,6 +573,43 @@
     transform: translateX(0);
     opacity: 1;
   }
+
+  /****CV***/
+  .timer {
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
+    gap: 50px;
+  }
+
+  .mobileh1 {
+    font-size: 3.2rem;
+  }
+  .timers {
+    display: grid;
+    gap: 40px;
+  }
+
+  .timer .progress {
+    height: 50%;
+    background: rgb(24, 51, 148);
+    width: 0%;
+    transition: width 0.3s; /* Animér fremdrift over 0.3 sekunder */
+    animation: progress 4s linear; /* Animér fremdriftslinjen over 3 sekunder */
+  }
+
+  .timer .progress.complete {
+    width: 100%; /* Fjerner animationen og transistionen, og sæt width til 100% */
+  }
+  /* Animationen for timer fremdriftslinjen */
+  @keyframes progress {
+    from {
+      width: 0%;
+    } /* Start med 0% fremdrift */
+    to {
+      width: 50%;
+    } /* Slut med 100% fremdrift */
+  }
 }
 
 @media (max-width: 799px) {
@@ -542,7 +618,8 @@
   }
   main section .grid_animation,
   main section .grid_animation2,
-  main section .grid_animation3 {
+  main section .grid_animation3,
+  main section .grid_cv .grid_3_4 {
     display: block;
   }
 
@@ -570,5 +647,39 @@
     font-family: "Literata", serif;
     font-size: 1rem;
     text-align: right;
+  }
+
+  /*****FOOTER*****/
+  footer {
+    background-color: rgba(24, 51, 148, 0.098);
+    width: 100%;
+    min-height: 250px;
+    padding: 10px 10px 25px 10px;
+    margin-top: 50px;
+  }
+
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+    text-align: center;
+  }
+  .footertext {
+    font-size: 2.5rem;
+    color: black;
+  }
+  .footertext2 {
+    font-size: 1.2rem;
+    color: black;
+    letter-spacing: normal;
+  }
+
+  .footerlist {
+    list-style-type: none;
+    display: grid;
+  }
+  .footerlink {
+    text-transform: none;
   }
 }
