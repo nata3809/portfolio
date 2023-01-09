@@ -108,23 +108,6 @@
   }
 
   /***************PROJEKTER**************/
-  .grid_p_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
-    text-align: center;
-    background-color: white;
-    margin-bottom: 90px;
-    animation: fadeIn 5s;
-  }
-
-  .grid_p_2 img {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 65%;
-    border: 5px solid #555;
-  }
 
   .grid_p {
     display: grid;
@@ -133,6 +116,14 @@
     margin-bottom: 40px;
   }
 
+  .projekt_link {
+    font-size: 1.2rem;
+  }
+
+  .grid_link1 {
+    display: grid;
+    margin-bottom: 70px;
+  }
   .grid_ps {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -182,7 +173,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .grid_webbilleder2 img {
@@ -195,20 +186,24 @@
 
   .grid_ux {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
   }
 
   .grid_usp {
     display: grid;
     text-align: center;
   }
-  .grid_uxtext1 {
+
+  .grid_ux1 {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 130px;
   }
+  .grid_ux2 {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 30px;
+  }
+
   .grid_pil {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -223,7 +218,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
   }
 
   .grid_pilbilleder img {
@@ -251,7 +246,7 @@
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     gap: 40px;
-    margin-bottom: 78px;
+    margin-bottom: 60px;
   }
 
   .grid_animation3 {
@@ -360,8 +355,15 @@
   }
 
   main {
+    display: block;
     background-image: url(img/pro.png);
     overflow: hidden;
+  }
+
+  main section .grid_animation,
+  main section .grid_animation2,
+  main section .grid_animation3 {
+    display: block;
   }
 
   #index {
@@ -431,6 +433,12 @@
     display: grid;
     gap: 20px;
     margin-bottom: 40px;
+  }
+  .grid_web3 {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
 
   .grid_3_4 {
