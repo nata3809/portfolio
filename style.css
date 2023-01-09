@@ -12,15 +12,17 @@ main {
   grid-template-rows: auto 1fr auto;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-main {
   background-image: url(img/pro.png);
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+body#index {
+  margin: 0px;
 }
 
 /***HEADER***/
@@ -42,6 +44,7 @@ header {
   align-items: center;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   position: relative;
+  margin: 0;
 }
 
 ul#horizontal-list li {
@@ -106,6 +109,10 @@ a:focus::before {
   transform: scale(1, 1);
 }
 
+#logo a::before {
+  display: none;
+}
+
 /*****TEKSTER****/
 
 h1 {
@@ -154,4 +161,23 @@ p {
   font-family: "Mukta", sans-serif;
   font-size: 1.1rem;
   background-color: rgba(255, 255, 255, 0.591);
+}
+
+/**Billeder**/
+
+.grid_webbilleder2 img {
+  width: 90%;
+  margin-top: 100px;
+  border: 5px solid #555;
+}
+.grid_web img {
+  border: 5px solid #555;
+}
+.grid_cv img {
+  border: 5px solid #555;
+  text-align: center;
+  width: 80%;
+}
+.grid_ommobil img {
+  border: 5px solid #555;
 }
