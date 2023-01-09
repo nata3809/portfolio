@@ -344,6 +344,32 @@
     } /* Slut med 100% fremdrift */
   }
 
+  /*****OM**********/
+  .grid_om1 {
+    display: grid;
+    gap: 60px;
+    text-align: center;
+  }
+  .grid_om1 img {
+    width: 80%;
+  }
+
+  .grid_om2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+  .grid_om2 img {
+    width: 80%;
+  }
+  .grid_om3 {
+    display: grid;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+
   /*****FOOTER*****/
   footer {
     background-color: rgba(24, 51, 148, 0.098);
@@ -403,6 +429,10 @@
   #index {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  #logo {
+    width: 20%;
   }
 
   .mobileh1 {
@@ -609,6 +639,18 @@
     to {
       width: 50%;
     } /* Slut med 100% fremdrift */
+  }
+
+  /*****OM****/
+  .grid_ommobil {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .grid_om1,
+  .grid_om2,
+  .grid_om3 {
+    margin-bottom: 40px;
   }
 }
 
