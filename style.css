@@ -181,3 +181,8 @@ p {
 .grid_ommobil img {
   border: 5px solid #555;
 }
+
+.github {
+  letter-spacing: 0.3rem;
+  font-weight: normal;
+}

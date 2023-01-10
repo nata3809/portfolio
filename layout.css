@@ -362,7 +362,7 @@
 
   /*****FOOTER*****/
   footer {
-    background-color: rgba(24, 51, 148, 0.155);
+    background-color: rgba(98, 102, 119, 0.128);
     width: 100%;
     min-height: 250px;
     padding: 10px 10px 25px 10px;
@@ -377,11 +377,11 @@
   }
   .footertext {
     font-size: 2.5rem;
-    color: black;
+    color: rgb(24, 51, 148);
+    font-style: normal;
   }
   .footertext2 {
     font-size: 1.2rem;
-    color: black;
     letter-spacing: normal;
   }
 
@@ -638,7 +638,7 @@
 
   /*****FOOTER*****/
   footer {
-    background-color: rgba(24, 51, 148, 0.098);
+    background-color: rgba(98, 102, 119, 0.128);
     width: 100%;
     min-height: 250px;
     padding: 10px 10px 25px 10px;
@@ -647,18 +647,16 @@
 
   .footer_grid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-
+    grid-template-columns: 1fr 1fr;
     text-align: center;
   }
   .footertext {
-    font-size: 2.5rem;
-    color: black;
+    font-size: 1.5rem;
+    color: rgb(24, 51, 148);
+    font-style: normal;
   }
   .footertext2 {
-    font-size: 1.2rem;
-    color: black;
+    font-size: 0.5rem;
     letter-spacing: normal;
   }
 
