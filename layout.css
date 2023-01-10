@@ -359,6 +359,9 @@
     gap: 30px;
     margin-bottom: 70px;
   }
+  .grid_githublink {
+    margin-top: 18px;
+  }
 
   /*****FOOTER*****/
   footer {
